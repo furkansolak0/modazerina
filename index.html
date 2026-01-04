@@ -3,184 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Moda Zerina | Özel Dikim Tesettür Giyim</title>
+  <title>Moda Zerina | Yakında</title>
 
   <style>
     :root {
       --primary: #01362a;
-      --bg1: #f6f4f0;
-      --bg2: #eef1ed;
-      --card: rgba(255,255,255,0.55);
+      --overlay: rgba(255, 255, 255, 0.65);
     }
 
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
       min-height: 100vh;
-      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--primary);
-      background:
-        radial-gradient(circle at top left, #ffffff 0%, transparent 60%),
-        radial-gradient(circle at bottom right, #dde5df 0%, transparent 55%),
-        linear-gradient(135deg, var(--bg1), var(--bg2));
+      font-family: "Playfair Display", serif;
+      background: url("Bg.jpg") center / cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 80px 24px;
     }
 
-    .card {
-      max-width: 960px;
+    .overlay {
+      background: var(--overlay);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
       width: 100%;
-      background: var(--card);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border-radius: 28px;
-      padding: 72px 64px;
-      box-shadow:
-        0 40px 80px rgba(1,54,42,0.15),
-        inset 0 0 0 1px rgba(1,54,42,0.08);
-      text-align: center;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
     }
 
-    .logo img {
-      max-width: 150px;
-      margin-bottom: 36px;
+    .content {
+      text-align: center;
+      max-width: 720px;
+      color: var(--primary);
+    }
+
+    .brand {
+      font-family: "Inter", sans-serif;
+      letter-spacing: 2px;
+      font-size: 12px;
+      margin-bottom: 24px;
+      opacity: 0.7;
     }
 
     h1 {
-      font-family: "Playfair Display", serif;
       font-size: 56px;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      margin-bottom: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
     }
 
-    .slogan {
-      font-style: italic;
-      font-size: 18px;
+    .text {
+      font-family: "Inter", sans-serif;
+      font-size: 16px;
+      margin-bottom: 36px;
       opacity: 0.85;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 36px;
+      border-radius: 999px;
+      background: white;
+      color: var(--primary);
+      font-family: "Inter", sans-serif;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none;
       margin-bottom: 48px;
     }
 
-    .intro {
-      font-size: 20px;
-      max-width: 760px;
-      margin: 0 auto 64px;
-      line-height: 1.7;
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
     }
 
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 28px;
-      margin-bottom: 72px;
+    .social a {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(1,54,42,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
     }
 
-    .feature {
-      padding: 36px 28px;
-      border-radius: 22px;
-      background: rgba(255,255,255,0.65);
-      box-shadow:
-        0 20px 40px rgba(1,54,42,0.12),
-        inset 0 0 0 1px rgba(1,54,42,0.1);
+    .social svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--primary);
     }
 
-    .feature h3 {
-      font-family: "Playfair Display", serif;
-      font-size: 22px;
-      margin-bottom: 14px;
-    }
-
-    .feature p {
-      font-size: 15px;
-      opacity: 0.95;
-    }
-
-    .status {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 16px 44px;
-      border-radius: 999px;
-      border: 1px solid var(--primary);
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      font-size: 13px;
-      background: rgba(255,255,255,0.4);
-    }
-
-    footer {
-      margin-top: 80px;
-      font-size: 12px;
-      opacity: 0.6;
-    }
-
-    @media (max-width: 700px) {
-      .card {
-        padding: 56px 28px;
-      }
-
+    @media (max-width: 600px) {
       h1 {
-        font-size: 42px;
-      }
-
-      .intro {
-        font-size: 17px;
+        font-size: 40px;
       }
     }
   </style>
 </head>
 
 <body>
+  <div class="overlay">
+    <div class="content">
 
-  <div class="card">
+      <div class="brand">MODA ZERINA</div>
 
-    <div class="logo">
-      <img src="Logo.png" alt="Moda Zerina Logo">
-    </div>
+      <h1>Yakında</h1>
 
-    <h1>Moda Zerina</h1>
-
-    <div class="slogan">
-      Her kadına özel, zerin bir dokunuş.
-    </div>
-
-    <div class="intro">
-      Moda Zerina, tesettür giyimde modern zarafeti, zamansız şıklığı ve
-      <strong>özel dikim</strong> anlayışını bir araya getiren seçkin bir markadır.
-      Her tasarım, kadının ölçülerine ve duruşuna özel olarak hazırlanır.
-    </div>
-
-    <div class="features">
-      <div class="feature">
-        <h3>Özel Dikim</h3>
-        <p>Kişiye özel ölçülerle hazırlanan, kusursuz kalıp ve uyum.</p>
+      <div class="text">
+        Her kadına özel, zerin bir dokunuş.<br />
+        Özel dikim koleksiyonumuz çok yakında sizlerle.
       </div>
 
-      <div class="feature">
-        <h3>Zamansız Zarafet</h3>
-        <p>Moda akımlarından bağımsız, yıllarca şıklığını koruyan tasarımlar.</p>
+      <a class="button" href="https://www.instagram.com/modazerina" target="_blank">
+        Bizi Takip Edin
+      </a>
+
+      <div class="social">
+        <a href="https://www.instagram.com/modazerina" target="_blank" aria-label="Instagram">
+          <svg viewBox="0 0 24 24">
+            <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.9a1.1 1.1 0 100 2.2 1.1 1.1 0 000-2.2z"/>
+          </svg>
+        </a>
       </div>
 
-      <div class="feature">
-        <h3>İnce İşçilik</h3>
-        <p>Her dikişte kalite, her detayda zarafet anlayışı.</p>
-      </div>
     </div>
-
-    <div class="status">
-      Yakında Hizmetinizdeyiz
-    </div>
-
-    <footer>
-      © Moda Zerina
-    </footer>
-
   </div>
-
 </body>
 </html>
