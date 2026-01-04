@@ -11,9 +11,5 @@ Bu repository, Modazerina’nın yakında yayına alınacak resmi web sitesi iç
 Web sitesi şu anda hazırlık aşamasındadır.  
 Yakında hizmetinizdeyiz.
 
-## Teknoloji
-- HTML
-- CSS
-- GitHub Pages
 
 © Modazerina
